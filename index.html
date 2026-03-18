@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎭 CineMax Theatre</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#booking">Book</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Experience Movies Like Never Before</h2>
+    <button onclick="scrollToBooking()">Book Tickets</button>
+</section>
+
+<section id="movies" class="movies">
+    <h2>Now Showing</h2>
+    <div class="movie-container">
+        <div class="card">
+            <h3>Avengers</h3>
+            <p>Action | 2h 45m</p>
+            <button onclick="selectMovie('Avengers')">Select</button>
+        </div>
+
+        <div class="card">
+            <h3>Inception</h3>
+            <p>Sci-Fi | 2h 20m</p>
+            <button onclick="selectMovie('Inception')">Select</button>
+        </div>
+
+        <div class="card">
+            <h3>Interstellar</h3>
+            <p>Drama | 2h 50m</p>
+            <button onclick="selectMovie('Interstellar')">Select</button>
+        </div>
+    </div>
+</section>
+
+<section id="booking" class="booking">
+    <h2>Book Your Tickets</h2>
+    <form onsubmit="return confirmBooking()">
+        <input type="text" id="name" placeholder="Enter Name" required>
+        <input type="email" placeholder="Enter Email" required>
+
+        <input type="text" id="selectedMovie" placeholder="Selected Movie" readonly>
+
+        <input type="number" id="tickets" placeholder="No. of Tickets" min="1" required>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+
+    <p id="totalPrice"></p>
+</section>
+
+<footer id="contact">
+    <p>Email: cinemax@email.com</p>
+    <p>© 2026 CineMax Theatre</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
