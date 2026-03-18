@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+}
+
+header {
+    background: #e50914;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px;
+    background: linear-gradient(to right, #000, #434343);
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #e50914;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.movies {
+    padding: 30px;
+    text-align: center;
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.card button {
+    margin-top: 10px;
+}
+
+.booking {
+    text-align: center;
+    padding: 30px;
+}
+
+form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 220px;
+}
+
+button {
+    background: #e50914;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 15px;
+}
